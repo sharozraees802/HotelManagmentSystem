@@ -43,6 +43,7 @@ namespace HotelManagmentSystem.Controllers
                     smtp.Host = "smtp.gmail.com";
                     smtp.Port = 587;
                     smtp.UseDefaultCredentials = false;
+//                     newpassword :sharozchanda007
                     smtp.Credentials = new NetworkCredential("hotelmvc5@gmail.com", "hotelmvc007");
                     smtp.EnableSsl = true;
                     smtp.Send(mail);
