@@ -34,7 +34,7 @@ namespace HotelManagmentSystem.Controllers
                     MailMessage mail = new MailMessage();
                     mail.To.Add(_objModelMail.To);
                     //mail.From = new MailAddress(_objModelMail.From);
-                    mail.From = new MailAddress("hotelmvc5@gmail.com", "hotel");
+                    mail.From = new MailAddress("hotelservcies@gmail.com", "hotel");
                     mail.Subject = _objModelMail.Subject;
                     string Body = _objModelMail.Body;
                     mail.Body = Body;
@@ -43,8 +43,8 @@ namespace HotelManagmentSystem.Controllers
                     smtp.Host = "smtp.gmail.com";
                     smtp.Port = 587;
                     smtp.UseDefaultCredentials = false;
-//                     newpassword :sharozchanda007
-                    smtp.Credentials = new NetworkCredential("hotelmvc5@gmail.com", "hotelmvc007");
+
+                    smtp.Credentials = new NetworkCredential("hotelservcies@gmail.com", "hotelservcies007");
                     smtp.EnableSsl = true;
                     smtp.Send(mail);
 
