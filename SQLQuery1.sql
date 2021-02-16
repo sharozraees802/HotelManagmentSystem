@@ -92,5 +92,4 @@ user_level_id int constraint pk_user_level_id  primary key identity (1,1),
 user_type  varchar(255)not null)
 
 
-
 alter table tbl_user add constraint FK_usr_level_no  foreign key (user_level) references tbl_user_level (user_level_id) on delete cascade ON UPDATE CASCADE
