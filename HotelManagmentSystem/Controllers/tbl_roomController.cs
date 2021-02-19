@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using HotelManagmentSystem.Models.DB;
+//using HotelManagmentSystem.Factory.AbstractFactor;
+//using HotelManagmentSystem.Factory.AbstractFactory;
 
 namespace HotelManagmentSystem.Controllers
 {
@@ -53,6 +55,10 @@ namespace HotelManagmentSystem.Controllers
         {
             if (ModelState.IsValid)
             {
+                //IRoomFactory factory = new RoomSystemFactory().Create(tbl_room);
+                //Room room = new Room(factory);
+                //tbl_room.room_number = room.GetRoom(); ;
+
                 db.tbl_room.Add(tbl_room);
                 db.SaveChanges();
                 return RedirectToAction("Index");

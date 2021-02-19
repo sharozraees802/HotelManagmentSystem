@@ -223,6 +223,26 @@
     <Compile Include="Controllers\tbl_userController.cs" />
     <Compile Include="Controllers\tbl_user_levelController.cs" />
     <Compile Include="Controllers\ViewController.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\Double.cs" />
+    <Compile Include="Factory\AbstractFactory\Enumeretions.cs" />
+    <Compile Include="Factory\AbstractFactory\AbstractInterface\IRoomFactory.cs" />
+    <Compile Include="Factory\AbstractFactory\AbstractProduct\IRoomType.cs" />
+    <Compile Include="Factory\AbstractFactory\AbstractProduct\IRoomTypeServies.cs" />
+    <Compile Include="Factory\AbstractFactory\AbstractProduct\IRoomTypeServiesPrice.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\JuniorSuite.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\King.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteFactory\LuxuryFactory.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\MasterSuite.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteFactory\NormalFactory.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\Price.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\Quad.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\Queen.cs" />
+    <Compile Include="Factory\AbstractFactory\Client\Room.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteFactory\RoomSystemFactory.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\RoomType.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\Single.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteFactory\SuiteFactory.cs" />
+    <Compile Include="Factory\AbstractFactory\ConcreteProduct\Triple.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
